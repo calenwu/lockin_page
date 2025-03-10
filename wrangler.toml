@@ -1,7 +1,2 @@
 name = "lockin-page"
-main = "dist/index.html"
-account_id = "5a55a11bd26894b60a97d6242eff96a8"
 pages_build_output_dir = "./dist"
-
-[site]
-bucket = "./dist" 

@@ -35,10 +35,10 @@ const fragmentShader = `
     float radius2 = 0.79;
     float radius3 = 0.805;
     
-    // Render the circles with significantly thicker strokes
-    float r = Circle(uv, center1, radius1, 0.06, 42.0);
-    float g = Circle(uv, center2, radius2, 0.05, 18.0);
-    float b = Circle(uv, center3, radius3, 0.056, 71.0);
+    // Render the circles with extremely thick strokes
+    float r = Circle(uv, center1, radius1, 0.12, 42.0);
+    float g = Circle(uv, center2, radius2, 0.10, 18.0);
+    float b = Circle(uv, center3, radius3, 0.11, 71.0);
     
     vec3 col = vec3(r, g, b);
     float alpha = max(max(r, g), b);
