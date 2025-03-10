@@ -4,4 +4,5 @@ account_id = "5a55a11bd26894b60a97d6242eff96a8"
 
 [site]
 bucket = "./dist"
-entry-point = "workers-site" 
+pages_build_output_dir = "./dist"
+entry-point = "./dist/index.html" 

@@ -1,8 +1,9 @@
-import { useRef, useMemo, useEffect, useState } from 'react';
-import { Canvas, useThree, createPortal } from '@react-three/fiber';
+import { useRef, useMemo, useEffect } from 'react';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const fragmentShader = `
+  uniform float iTime;
   uniform vec2 iResolution;
   
   float Circle(vec2 uv, vec2 center, float radius, float thickness, float seed) {
@@ -10,8 +11,8 @@ const fragmentShader = `
     vec2 centerToPixel = uv - center;
     float angle = atan(centerToPixel.y, centerToPixel.x);
     
-    float s1 = sin(angle * 5.0 + 512.0 + seed) * 0.006;
-    float s2 = sin(angle * 2.0 + 21.0 + seed) * 0.008;
+    float s1 = sin(angle * 5.0 - iTime + 512.0 + seed) * 0.006;
+    float s2 = sin(angle * 2.0 + iTime * 1.8 + 21.0 + seed) * 0.008;
     float noise = s1 + s2;
     return 1.0 - smoothstep(thickness, thickness + 0.013, abs(dis - radius + noise));
   }
@@ -25,20 +26,12 @@ const fragmentShader = `
     float aspect = iResolution.x / iResolution.y;
     uv.x *= aspect;
     
-    // More subtle offset centers for each circle
-    vec2 center1 = vec2(0.01, -0.01);  // red offset
-    vec2 center2 = vec2(-0.01, 0.005);  // green offset
-    vec2 center3 = vec2(0.0, -0.008); // blue offset
+    vec2 center = vec2(0.0);
+    float radius = 0.8;
     
-    // More similar radii
-    float radius1 = 0.80;
-    float radius2 = 0.79;
-    float radius3 = 0.805;
-    
-    // Render the circles with significantly thicker strokes
-    float r = Circle(uv, center1, radius1, 0.06, 42.0);
-    float g = Circle(uv, center2, radius2, 0.05, 18.0);
-    float b = Circle(uv, center3, radius3, 0.056, 71.0);
+    float r = Circle(uv, center, radius, 0.0065, 42.0);
+    float g = Circle(uv, center, radius, 0.0050, 18.0);
+    float b = Circle(uv, center, radius, 0.0065, 71.0);
     
     vec3 col = vec3(r, g, b);
     float alpha = max(max(r, g), b);
@@ -60,6 +53,7 @@ function ShaderMesh() {
   const { size } = useThree(); // Get the canvas size from Three.js
 
   const uniformsRef = useRef({
+    iTime: { value: 0 },
     iResolution: {
       value: new THREE.Vector2(1, 1), // Initialize with dummy values
     },
@@ -69,6 +63,14 @@ function ShaderMesh() {
   useEffect(() => {
     uniformsRef.current.iResolution.value.set(size.width, size.height);
   }, [size]);
+
+  useFrame((state) => {
+    if (uniformsRef.current) {
+      uniformsRef.current.iTime.value = state.clock.elapsedTime;
+      // Update resolution each frame to ensure it's always correct
+      uniformsRef.current.iResolution.value.set(size.width, size.height);
+    }
+  });
 
   const shaderMaterial = useMemo(
     () =>
@@ -90,18 +92,13 @@ function ShaderMesh() {
 }
 
 export default function ShaderCanvas() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
   return (
-    <div className='relative w-full h-full'>
-      <Canvas
-        ref={canvasRef}
-        camera={{ position: [0, 0, 1] }}
-        className='w-full h-full'
-        style={{ display: 'block' }}
-      >
-        <ShaderMesh />
-      </Canvas>
-    </div>
+    <Canvas
+      camera={{ position: [0, 0, 1] }}
+      className='w-full h-full'
+      style={{ display: 'block' }}
+    >
+      <ShaderMesh />
+    </Canvas>
   );
 }

@@ -22,7 +22,7 @@ function App() {
         <ShaderCanvas />
       </div>
 
-      <div className='relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-4 text-center pt-20'>
+      {/* <div className='relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-4 text-center pt-20'>
         <h1 className='text-4xl md:text-6xl font-bold mb-6'>
           {yearPercentage}% of the year is already over
         </h1>
@@ -37,7 +37,7 @@ function App() {
         >
           <AppStoreButton />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
