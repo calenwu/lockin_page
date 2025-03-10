@@ -4,6 +4,7 @@ import ShaderCanvas from './components/ShaderCanvasMoving';
 
 function App() {
   const [yearPercentage, setYearPercentage] = useState(0);
+  const currentYear = new Date().getFullYear(); // Get current year
 
   useEffect(() => {
     const now = new Date();
@@ -23,9 +24,7 @@ function App() {
       </div>
 
       <div className='relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-4 text-center pt-20'>
-        <h1 className='text-4xl md:text-6xl font-bold mb-6'>
-          {yearPercentage}% of the year is already over
-        </h1>
+        <h1 className='text-4xl md:text-6xl font-bold mb-6'>{currentYear}</h1>
         <p className='text-2xl md:text-3xl mb-12'>
           It's time to <strong>Lock In</strong>
         </p>
