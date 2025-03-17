@@ -13,6 +13,7 @@ export default function PrivacyPolicy() {
           <Link to='/' className='text-blue-400 hover:underline'>
             ← Back to Home
           </Link>
+          <div>Todo: Add content here</div>
         </div>
       </div>
     </div>
