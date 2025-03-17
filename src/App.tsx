@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import ShaderCanvas from './components/ShaderCanvas';
 import ShaderCanvas from './components/ShaderCanvasMoving';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [yearPercentage, setYearPercentage] = useState(0);
@@ -37,6 +38,26 @@ function App() {
           rel='noopener noreferrer'
         >
           <AppStoreButton />
+        </a>
+      </div>
+
+      {/* Footer links */}
+      <div className='fixed bottom-4 right-4 z-20 text-white text-sm space-x-2'>
+        <Link to='/privacy-policy' className='text-white hover:underline'>
+          Privacy Policy
+        </Link>{' '}
+        |
+        <Link to='/terms-of-service' className='text-white hover:underline'>
+          Terms of Service
+        </Link>{' '}
+        |
+        <a
+          href='https://app.youform.com/forms/qhl8g6a7'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-white hover:underline'
+        >
+          Contact Us
         </a>
       </div>
     </div>

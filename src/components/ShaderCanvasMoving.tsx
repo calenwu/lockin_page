@@ -97,6 +97,7 @@ export default function ShaderCanvas() {
       camera={{ position: [0, 0, 1] }}
       className='w-full h-full'
       style={{ display: 'block' }}
+      dpr={1}
     >
       <ShaderMesh />
     </Canvas>
