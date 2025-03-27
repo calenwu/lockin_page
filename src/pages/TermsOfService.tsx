@@ -10,7 +10,7 @@ export default function TermsOfService() {
         <p className='mb-4 font-bold'>
           Terms of Service for Lock In: Stop Procastinating
         </p>
-        <p className='mb-4'>Last updated: [Insert Date]</p>
+        <p className='mb-4'>Last updated: 27th March 2025</p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>1. Acceptance of Terms</h2>
         <p className='mb-4'>
@@ -68,7 +68,7 @@ export default function TermsOfService() {
           <br />
           Ye Trading (Sole Proprietaryship)
           <br />
-          [Insert Contact Information]
+          calenwubiz@gmail.com
         </p>
 
         <div className='mt-8'>
