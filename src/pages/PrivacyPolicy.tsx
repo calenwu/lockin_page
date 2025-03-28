@@ -34,7 +34,10 @@ export default function PrivacyPolicy() {
             <strong>App Functionality Data:</strong> We only store information
             essential for the app's functionality. This includes your profile
             details (display name, username, profile picture), friend list, and
-            the number of hours you have "locked in" each week.
+            the number of hours you have "locked in" each week - basically all
+            the data which gets displayed to anybody must be stored on our
+            database. Additionally, we store your the FCM token to send you push
+            notifications.
           </li>
         </ul>
 
@@ -56,7 +59,14 @@ export default function PrivacyPolicy() {
         <p className='mb-4'>
           We use Supabase to host our servers. As part of their service,
           Supabase may log your IP address. For more details on how Supabase
-          handles your data, please refer to their Privacy Policy.
+          handles your data, please refer to their{' '}
+          <a
+            href='https://supabase.com/privacy'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Supabse Privacy Policy
+          </a>
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>Your Rights</h2>
