@@ -8,8 +8,8 @@ export default function Credits() {
         <h1 className='text-4xl font-bold mb-8'>Credits</h1>
 
         <p className='mb-6'>
-          Lock In app wouldn't be possible without the amazing artwork and
-          contributions from these talented artists:
+          Lock In app wouldn't be possible without the amazing artwork from
+          these talented artists:
         </p>
 
         <div className='space-y-8'>
