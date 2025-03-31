@@ -46,15 +46,15 @@ function App() {
         <Link to='/privacy-policy' className='text-white hover:underline'>
           Privacy Policy
         </Link>{' '}
-        |
+        |{' '}
         <Link to='/terms-of-service' className='text-white hover:underline'>
           Terms of Service
         </Link>{' '}
-        |
+        |{' '}
         <Link to='/credits' className='text-white hover:underline'>
           Credits
         </Link>{' '}
-        |
+        |{' '}
         <a
           href='https://app.youform.com/forms/qhl8g6a7'
           target='_blank'
