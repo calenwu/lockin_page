@@ -6,9 +6,8 @@ export default function TermsOfService() {
     <div className='min-h-screen bg-black text-white p-8'>
       <div className='max-w-3xl mx-auto'>
         <h1 className='text-4xl font-bold mb-8'>
-          Terms of ServiceLock In: Stop Procrastinating
+          Terms of Service, Lock In: Stop Procrastinating
         </h1>
-
         <p className='mb-4'>Last updated: March 31, 2025</p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>1. Acceptance of Terms</h2>
@@ -59,7 +58,22 @@ export default function TermsOfService() {
           subscription or account access at any time, with or without notice.
         </p>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>5. Account Termination</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          5. Limitation of Liability
+        </h2>
+        <p>
+          The Lock In app might contain bugs or operational issues and may not
+          always function as intended. Users acknowledge that Lock In will not
+          be held liable for any harm, issues, or losses caused by these bugs or
+          operational failures.
+        </p>
+        <p className='mt-2'>
+          We strive to keep the app as bug-free as possible. However, users
+          experiencing critical issues can uninstall the app via their device's
+          Operating System Settings as a final remedy.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>6. Account Termination</h2>
         <p className='mb-4'>
           We reserve the right to terminate or suspend your account at any time,
           with or without notice, if you violate these Terms of Service or if
@@ -67,14 +81,14 @@ export default function TermsOfService() {
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          6. Changes to These Terms
+          7. Changes to These Terms
         </h2>
         <p className='mb-4'>
           We may update these Terms from time to time. Your continued use of the
           app after changes constitutes your acceptance of the new terms.
         </p>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>7. Contact Us</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>8. Contact Us</h2>
         <p className='mb-4'>
           If you have any questions or concerns about these Terms of Service,
           please contact:
