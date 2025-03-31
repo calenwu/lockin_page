@@ -51,6 +51,10 @@ function App() {
           Terms of Service
         </Link>{' '}
         |
+        <Link to='/credits' className='text-white hover:underline'>
+          Credits
+        </Link>{' '}
+        |
         <a
           href='https://app.youform.com/forms/qhl8g6a7'
           target='_blank'
