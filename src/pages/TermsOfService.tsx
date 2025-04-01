@@ -143,8 +143,9 @@ export default function TermsOfService() {
         <h2 className='text-2xl font-bold mt-6 mb-2'>8. Account Termination</h2>
         <p className='mb-4'>
           We reserve the right to terminate or suspend your account at any time,
-          with or without notice, if you violate these Terms of Service or your
-          behavior is harmful to the community or the app.
+          with or without notice. This will most likely happen if you violate
+          these Terms of Service or your behavior is harmful to the community or
+          the app.
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
