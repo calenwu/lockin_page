@@ -33,7 +33,7 @@ function App() {
         </p>
 
         <a
-          href='https://apps.apple.com'
+          href='https://apps.apple.com/us/app/lock-in-stop-procrastinating/id6743096520'
           target='_blank'
           rel='noopener noreferrer'
         >
