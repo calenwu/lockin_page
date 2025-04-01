@@ -5,92 +5,241 @@ export default function PrivacyPolicy() {
   return (
     <div className='min-h-screen bg-black text-white p-8'>
       <div className='max-w-3xl mx-auto'>
-        <h1 className='text-4xl font-bold mb-8'>Privacy Policy</h1>
+        <h1 className='text-4xl font-bold mb-8'>
+          Privacy Policy for Lock In: Stop Procrastinating
+        </h1>
+        <p className='mb-4'>Last updated: April 1, 2025</p>
 
-        <p className='mb-4 font-bold'>
-          Privacy Policy for Lock In: Stop Procastinating
-        </p>
-        <p className='mb-4'>Last updated: 27th March 2025</p>
-
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Introduction</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>1. Introduction</h2>
         <p className='mb-4'>
-          Ye Trading (Sole Proprietaryship) (“we”, “our”, or “us”) is committed
-          to protecting your privacy. This Privacy Policy explains the minimal
-          data we collect through our app, Lock In: Stop Procastinating, how we
-          use it, and your rights regarding your data.
+          Ye Trading (Sole Proprietorship) (“we”, “our”, “us”, “Lock In”) is
+          committed to protecting your privacy. This Privacy Policy explains
+          clearly what data we collect, how we use it, and your rights regarding
+          your data when using the Lock In: Stop Procrastinating app (the
+          “Service” or “App”).
+        </p>
+        <p className='mb-4'>
+          By using our App, you agree to this Privacy Policy. If you disagree
+          with any terms, please do not use the App.
         </p>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Data We Collect</h2>
-        <ul className='list-disc list-inside mb-4'>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>2. Data We Collect</h2>
+        <p className='mb-4'>
+          We collect minimal personal data, limited to what's essential for the
+          functionality of our app:
+        </p>
+        <p className='mb-4 font-bold'>Personal Data We Collect:</p>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
           <li>
-            <strong>No Personal Information:</strong> We do not collect personal
-            details such as your name, email address, or payment information.
+            <strong>Profile Information:</strong> Display name, username,
+            profile picture, and friend list, stored to provide core
+            functionalities (e.g., displaying your profile to other users).
           </li>
           <li>
-            <strong>Apple OAuth Login:</strong> All login credentials are
-            managed by Apple via OAuth.
+            <strong>Usage Data:</strong> Information regarding how many hours
+            you've "locked in" per week, which is publicly viewable in the app.
           </li>
           <li>
-            <strong>App Functionality Data:</strong> We only store information
-            essential for the app's functionality. This includes your profile
-            details (display name, username, profile picture), friend list, and
-            the number of hours you have "locked in" each week - basically all
-            the data which gets displayed to anybody must be stored on our
-            database. Additionally, we store your the FCM token to send you push
-            notifications.
+            <strong>Technical Data:</strong> Firebase Cloud Messaging (FCM)
+            tokens, used exclusively to send you push notifications.
+          </li>
+        </ul>
+        <p className='mb-4'>
+          We do not collect sensitive personal data, payment details, or
+          passwords. Logins are managed securely through Apple's OAuth.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          3. How We Use Your Data
+        </h2>
+        <p className='mb-4'>Your data is used exclusively to:</p>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
+          <li>Provide and maintain the App's core functionalities.</li>
+          <li>
+            Allow interaction and social features within the App (such as
+            sharing activity with friends).
+          </li>
+          <li>
+            Send push notifications about your usage, reminders, and updates to
+            the Service.
+          </li>
+        </ul>
+        <p className='mb-4'>
+          We do not sell, trade, or share your data with third parties for
+          marketing or advertising purposes.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>4. Data Security</h2>
+        <p className='mb-4'>
+          We take your privacy and security seriously. We utilize secure servers
+          (hosted by Supabase) and employ industry-standard measures and
+          encryption technologies to protect your data. While we strive for
+          strong security, no system can guarantee 100% protection. By using the
+          Service, you acknowledge these risks.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          5. Third-Party Services
+        </h2>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
+          <li>
+            <strong>Supabase:</strong> Hosts our database and backend services.
+            Supabase may log your IP address as part of standard operational
+            practices. For details, review their Privacy Policy.
           </li>
         </ul>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Use of Your Data</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          6. Children's Privacy (COPPA Compliance)
+        </h2>
         <p className='mb-4'>
-          The data we collect is used solely to provide and enhance the
-          functionality of the app. We do not sell, trade, or share your
-          information with third parties for marketing or other purposes.
+          Lock In is not intended for children under the age of 13. We do not
+          knowingly collect personal data from anyone under 13. If we discover
+          or are notified that we have inadvertently collected personal data
+          from children under 13, we will promptly delete it. Please contact us
+          immediately if you suspect we may have collected data from a child
+          under 13.
         </p>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Data Security</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          7. Your Rights and Choices
+        </h2>
         <p className='mb-4'>
-          We will try our best to keep your data secure using industry-standard
-          measures and protocols. While we strive to protect your information,
-          please be aware that no security system is impenetrable.
-        </p>
-
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Third-Party Services</h2>
-        <p className='mb-4'>
-          We use Supabase to host our servers. As part of their service,
-          Supabase may log your IP address. For more details on how Supabase
-          handles your data, please refer to their{' '}
+          <strong>Account Deletion & Data Removal:</strong> You can request to
+          delete your account and associated data at any time by contacting us{' '}
           <a
-            href='https://supabase.com/privacy'
+            href='https://app.youform.com/forms/qhl8g6a7'
             target='_blank'
             rel='noopener noreferrer'
           >
-            Supabse Privacy Policy
+            via Form
+          </a>
+          . Upon verification of your request, we will promptly delete your
+          account data.
+        </p>
+        <p className='mb-4'>
+          <strong>Push Notifications:</strong> You can disable push
+          notifications via your device settings.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>8. Data Retention</h2>
+        <p className='mb-4'>
+          We retain your personal data as long as your account remains active,
+          or as required by law. Upon deletion of your account, we may retain
+          data in backup systems temporarily. However, such data will not be
+          actively used or accessed.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          9. International Users & Data Transfers
+        </h2>
+        <p className='mb-4'>
+          Lock In is hosted on servers primarily based in the United States. By
+          using Lock In from outside the United States, you consent to your
+          personal data being transferred and processed in the United States,
+          which may offer different levels of data protection than your home
+          country.
+        </p>
+        <p className='mb-4'>
+          For users in the European Economic Area (EEA), we ensure data
+          transfers are compliant with GDPR by using standard contractual
+          clauses approved by the European Commission or similar mechanisms
+          providing adequate protection.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          10. California Residents (CCPA Compliance)
+        </h2>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
+          <li>
+            <strong>Right to Know:</strong> Request disclosure about the
+            categories and specific pieces of personal data collected.
+          </li>
+          <li>
+            <strong>Right to Delete:</strong> Request deletion of your collected
+            personal data.
+          </li>
+          <li>
+            <strong>Right to Non-Discrimination:</strong> You will not receive
+            discriminatory treatment when exercising your privacy rights.
+          </li>
+        </ul>
+        <p className='mb-4'>
+          To exercise these rights, please contact us at{' '}
+          <a
+            href='https://app.youform.com/forms/qhl8g6a7'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            via Form
+          </a>
+          . Verification of identity is required.
+        </p>
+        <p className='mb-4'>
+          We do not sell your personal data to third parties.
+        </p>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          11. European Economic Area Users (GDPR Compliance)
+        </h2>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
+          <li>
+            <strong>Right to Access:</strong> Request access to your personal
+            data.
+          </li>
+          <li>
+            <strong>Right to Rectify:</strong> Request correction of inaccurate
+            data.
+          </li>
+          <li>
+            <strong>Right to Erasure ("Right to be Forgotten"):</strong> Request
+            deletion of your data.
+          </li>
+          <li>
+            <strong>Right to Data Portability:</strong> Request transfer of your
+            data to another service provider.
+          </li>
+          <li>
+            <strong>Right to Object:</strong> Object to processing your data for
+            certain purposes.
+          </li>
+        </ul>
+        <p className='mb-4'>
+          To exercise these rights, contact us at{' '}
+          <a
+            href='https://app.youform.com/forms/qhl8g6a7'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            via Form
           </a>
         </p>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Your Rights</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          12. Updates to this Policy
+        </h2>
         <p className='mb-4'>
-          You are free to request the deletion of your account and all
-          associated data at any time. Please contact us to exercise this right,
-          and we will process your request promptly.
+          We may occasionally update this Privacy Policy. Any updates will be
+          clearly announced within the App. Continued use of Lock In after
+          updates implies acceptance of the new terms.
         </p>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Changes to This Policy</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>13. Contact Us</h2>
         <p className='mb-4'>
-          We may update this Privacy Policy from time to time. Any changes will
-          be posted within the app, and we encourage you to review the policy
-          periodically.
-        </p>
-
-        <h2 className='text-2xl font-bold mt-6 mb-2'>Contact Us</h2>
-        <p className='mb-4'>
-          If you have any questions or concerns regarding this Privacy Policy or
-          our data practices, please contact us at:
+          If you have questions, concerns, or requests related to your data or
+          privacy rights, please contact:
           <br />
-          Ye Trading (Sole Proprietaryship)
+          Ye Trading (Sole Proprietorship)
           <br />
-          calenwubiz@gmail.com
+          <a
+            href='https://app.youform.com/forms/qhl8g6a7'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Via form
+          </a>
+          <br />
+          or Email: calenwubiz@gmail.com
         </p>
 
         <div className='mt-8'>
