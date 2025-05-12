@@ -8,7 +8,7 @@ export default function TermsOfService() {
         <h1 className='text-4xl font-bold mb-8'>Terms of Service</h1>
 
         <p className='text-2xl mb-4'>Lock In: Stop Procrastinating</p>
-        <p className='mb-8'>Last updated: April 1, 2025</p>
+        <p className='mb-4'>Last updated: May 12, 2025</p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>1. Acceptance of Terms</h2>
         <p className='mb-4'>
@@ -40,10 +40,36 @@ export default function TermsOfService() {
             inappropriate or illegal profile pictures. Any content deemed
             offensive, explicit, or in violation of laws is not permitted.
           </li>
+          <li>
+            Wall of Shame Recordings: When using the Wall of Shame feature, you
+            must only record yourself reading the provided challenge text.
+            Posting any other content, especially inappropriate, offensive, or
+            illegal material, is strictly forbidden and may result in account
+            termination.
+          </li>
         </ul>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          4. Subscription and Products
+          4. Wall of Shame Feature
+        </h2>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
+          <li>
+            Visibility: Videos posted to the Wall of Shame are accessible via a
+            unique link. Only friends you are connected with in the app will
+            receive this link directly. While the link is designed to be
+            extremely difficult to guess (a random UUID, with a chance of
+            roughly one in three hundred forty undecillion (a number with 37
+            zeros), or 2^128, of being guessed correctly), anyone who somehow
+            obtains the link will be able to view the video.
+          </li>
+          <li>
+            Deletion: Wall of Shame video posts are automatically deleted
+            approximately 48 hours after posting.
+          </li>
+        </ul>
+
+        <h2 className='text-2xl font-bold mt-6 mb-2'>
+          5. Subscription and Products
         </h2>
         <ul className='list-disc pl-6 mb-4 space-y-2'>
           <li>
@@ -61,7 +87,7 @@ export default function TermsOfService() {
         </ul>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          5. Limitation of Liability
+          6. Limitation of Liability
         </h2>
         <p className='mb-4'>
           The Lock In app may contain bugs or operational issues and may not
@@ -81,7 +107,7 @@ export default function TermsOfService() {
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          6. Privacy and Data Collection
+          7. Privacy and Data Collection
         </h2>
         <p className='mb-4'>We prioritize your privacy:</p>
         <ul className='list-disc pl-6 mb-4 space-y-2'>
@@ -123,7 +149,7 @@ export default function TermsOfService() {
           </li>
         </ul>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>7. Refund Policy</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>8. Refund Policy</h2>
         <ul className='list-disc pl-6 mb-4 space-y-2'>
           <li>
             For annual subscription purchases made directly through Lock In
@@ -140,7 +166,7 @@ export default function TermsOfService() {
           </li>
         </ul>
 
-        <h2 className='text-2xl font-bold mt-6 mb-2'>8. Account Termination</h2>
+        <h2 className='text-2xl font-bold mt-6 mb-2'>9. Account Termination</h2>
         <p className='mb-4'>
           We reserve the right to terminate or suspend your account at any time,
           with or without notice. This will most likely happen if you violate
@@ -149,7 +175,7 @@ export default function TermsOfService() {
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          9. Changes to These Terms
+          10. Changes to These Terms
         </h2>
         <p className='mb-4'>
           We may update these Terms periodically. Continued use after changes
@@ -157,7 +183,7 @@ export default function TermsOfService() {
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          10. End User License Agreement (EULA)
+          11. End User License Agreement (EULA)
         </h2>
         <p className='mb-4'>
           Your use of Lock In: Stop Procrastinating is governed by Apple's
@@ -174,7 +200,7 @@ export default function TermsOfService() {
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
-          11. Contact Information
+          12. Contact Information
         </h2>
         <p className='mb-4'>
           If you have questions or concerns about these Terms of Service, please

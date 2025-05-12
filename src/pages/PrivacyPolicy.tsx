@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
         <h1 className='text-4xl font-bold mb-8'>
           Privacy Policy for Lock In: Stop Procrastinating
         </h1>
-        <p className='mb-4'>Last updated: April 1, 2025</p>
+        <p className='mb-4'>Last updated: May 12, 2025</p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>1. Introduction</h2>
         <p className='mb-4'>
@@ -43,6 +43,18 @@ export default function PrivacyPolicy() {
             <strong>Technical Data:</strong> Firebase Cloud Messaging (FCM)
             tokens, used exclusively to send you push notifications.
           </li>
+          <li>
+            <strong>Wall of Shame Videos:</strong> If you choose to use the Wall
+            of Shame feature to extend your daily app limits, we collect the
+            video recording of you reading the challenge text. This video is
+            linked to your account and is accessible via a unique, hard-to-guess
+            link for approximately 48 hours before deletion. Only friends you
+            are connected with in the app will receive this link directly.
+            Anyone else would need to guess the link (with a chance of roughly
+            one in three hundred forty undecillion (a number with 37 zeros), or
+            2^128, of guessing correctly) or otherwise obtain it to view the
+            video during this period.
+          </li>
         </ul>
         <p className='mb-4'>
           We do not collect sensitive personal data, payment details, or
@@ -62,6 +74,10 @@ export default function PrivacyPolicy() {
           <li>
             Send push notifications about your usage, reminders, and updates to
             the Service.
+          </li>
+          <li>
+            Display Wall of Shame videos to users who have the specific access
+            link, for a limited duration.
           </li>
         </ul>
         <p className='mb-4'>
@@ -127,7 +143,8 @@ export default function PrivacyPolicy() {
           We retain your personal data as long as your account remains active,
           or as required by law. Upon deletion of your account, we may retain
           data in backup systems temporarily. However, such data will not be
-          actively used or accessed.
+          actively used or accessed. Wall of Shame videos are automatically
+          deleted approximately 48 hours after they are posted.
         </p>
 
         <h2 className='text-2xl font-bold mt-6 mb-2'>
